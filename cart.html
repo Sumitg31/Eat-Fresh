@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Fruits and Vegetables</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #184d47;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-details h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.cart-item-details p {
+    margin: 5px 0;
+}
+
+.cart-item-total {
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.cart-summary {
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.cart-summary p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #184d47;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #184d47;
+}
+header{
+    letter-spacing: 10px;
+
+}
+    </style>
+</head>
+<body>
+    <div class="menu" class="sticky">
+        <ul class="menu-ul">
+            <a href="home.html" class="a-menu"><li>Home</li></a>
+            <a href="VEGETABLES.html" class="a-menu"><li>Vegetables</li></a>
+            <a href="fruits.html" class="a-menu"><li>Fruits</li></a>
+            <a href="Dryfruit.html" class="a-menu"><li>Dryfruit</li></a>
+            <a href="cart.html" class="a-menu"><li>Cart</li></a>
+            <a href="deal.html  " class="a-menu"><li>Deals</li></a>
+            <a href="contact.html" class="a-menu"><li>Contact us</li></a>
+        </ul>
+        <div class="search-box">
+            <form>
+            <input type="text" placeholder="Search..." name="search" class="search-input"/>
+            </form>
+            </div>
+    </div>
+    <header>
+        
+        <h1>SHOPING CART</h1>
+    </header>
+
+    <main>
+        <div class="cart">
+            <div class="cart-item">
+                <img src="image/fruits/apple.jpg" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h2>Organic Apple</h2>
+                    <p>Price: ₹120 kg</p>
+                    <p>Quantity: <input type="number" value="1" min="1"></p>
+                </div>
+                <div class="cart-item-total">
+                    <p>Total: ₹120</p>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img src="image/fruits/Bananas.jpg"  class="cart-item-image">
+                <div class="cart-item-details">
+                    <h2>Organic Bananas</h2>
+                    <p>Price:  ₹100 kg</p>
+                    <p>Quantity: <input type="number" value="2" min="1"></p>
+                </div>
+                <div class="cart-item-total">
+                    <p>Total:  ₹100</p>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img src="image/fruits/dragon.png"  class="cart-item-image">
+                <div class="cart-item-details">
+                    <h2>Organic Dragon fruit</h2>
+                    <p>Price: ₹300 kg</p>
+                    <p>Quantity: <input type="number" value="3" min="1"></p>
+                </div>
+                <div class="cart-item-total">
+                    <p>Total: ₹300</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h2>Cart Summary</h2>
+            <p>Total: ₹520</p>
+            <button>Checkout</button>
+        </div>
+    </main>
+</body>
+</html>
